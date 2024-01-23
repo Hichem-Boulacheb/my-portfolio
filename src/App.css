@@ -1,38 +1,336 @@
-.App {
-  text-align: center;
+.navBarList{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.pageList{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    font-size: medium;
+    font-weight: 300;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.contactButton{
+    background-color: white;
+    border: solid 1px #5e3bee;
+    color: #5e3bee;
+    width: 150px;
+    height: 55px;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.contactButton:hover{
+    color: white;
+    background-color: #5e3bee;
+}
+.navBarList{
+    margin: 0px 80px 0px 60px ;
+    padding: 15px 0px 15px 0px;
+}
+.navBar{
+    background-color: white;
+    width: 100%;
+    /* height: 100%; */ 
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* box-shadow: 0 5.333px 80px 0 rgba(0,0,0,.1);
+     */
+     box-shadow: 0 5.333px 80px 0 rgb(220, 217, 217);
+}
+.containerHero{
+    display: flex;
+    padding: 150px 70px 70px 70px;
+    flex-wrap: nowrap;
+    gap: 100px;
+}
+.containerDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    flex: 0 1 auto;
+}
+.heroImage{
+    width: 50%;
+    height: 30%;
+    flex: 0 1 auto;
+}
+.containerDescription p{
+    font-size: 20px;
+    font-weight:600;
+    margin: 15px 0px 15px 0px;
+}
+.containerDescription h1{
+    font-size: 68px;
+    line-height: 70px;
+    margin: 0;
+}
+#description{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+}
+#heroButton{
+    color: white;
+    background-color: #5e3bee;
+}
+#heroButton:hover{
+    background-color: white;
+    color: #5e3bee;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+}
+.skills{
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+.skill img{
+    width: 55px;
+    height: 55px;
+    box-shadow: 0 0 16px 0 rgb(220, 217, 217);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+.skill{
+    max-width: 290px;
+    box-shadow: 0 0 16px 0 rgb(220, 217, 217);
+    border-radius: 10px;
+    padding: 25px;
+}
+.Myskills h1{
+    font-size: 50px;
+    margin:0;
+}
+.Myskills{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 70px 20px 200px 80px;
+}
+.skill:hover{
+    border-bottom: solid 5px #5e3bee;
+}
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 80px 60px 80px;
+}
+.aboutMe img{
+    width: 40%;
+    height: 50%;
+    flex: 0 1 auto;
+}
+.aboutDescription h1{
+    font-size: 55px;
+    margin: 0;
+}
+.aboutDescription p{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+}
+.portfolio .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+#githubBtn{
+    height: 60px;
+    width: 200px;
+    color: white;
+    background-color: #e62872;
+    border: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px 0 rgba(16,24,40,.95);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#githubBtn:hover{
+    color: #e62872;
+    background-color: white;
+}
+.icon{
+    font-size: 25px; 
+}
+.portfolio{
+    padding: 80px ;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    max-width: 32%;
+    box-shadow: 0 0 32px 0 rgba(0,0,0,.15);
+    margin-top: 35px;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+.projectDescription{
+    margin-left: 25px;
+    margin-top: 50px;
+    
+}
+.projectDescription h2{
+    margin: 0;
+}
+.projectDescription p{
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.projectDescription a{
+    padding-bottom: 10px;
+    border-bottom:solid 1px #5e3bee;
+    display: flex;
+    max-width: fit-content;
+    gap: 10px;
+    align-items: center;
+}
+.projectDescription .icon{
+    font-size: 25px;
+}
+.project:hover .icon{
+    color:#1c1e53;
+}
+.projects{
+    display: flex;
+    gap: 35px;
+    margin-top: 25px;
+}
+.contactTitle *{
+    margin:0;
+    text-align: center;
+}
+.userInput{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 80px 30% 5px 30%;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#check{
+    display: flex;
+    flex-direction: row;
+    grid-column: span 2;
+    align-items: center;
+}
+#message{
+    grid-column: span 2;
+}
+#messageInput{
+    height: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input,textarea{
+    border:solid 1.33px #5e3bee;
+    height: 20px;
+    border-radius: 10px;
+    /* width: 300px; */
+    padding: 16px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+textarea::placeholder{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#submitButton{
+    background-color: #5e3bee;
+    color: white;
+    align-self: center;
 }
-
-.App-link {
-  color: #61dafb;
+#submitButton:hover{
+    color:#5e3bee;
+    background-color:white ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#containerButton{
+    display: flex;
+    justify-content: center;
+}
+.contact{
+    padding: 120px 0px 120px 0px;
+}
+.iconContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.socialIcon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 2px;
+}
+.socialIcon:hover{
+    transform: scale(1.5,1.5);
+}
+#facebook:hover{
+    color: #1877F2;
+}
+#instgram:hover{
+    border-radius: 7px;
+    color: white;
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);;
+}
+#twitter:hover{
+    color:#1DA1F2
+}
+#linkedin:hover{
+    color:#0A66C2;
+}
+#footerList{
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 100px;
+    
+}
+.divider {
+    background: rgba(40,41,56,.55);
+    height: 1.333px;
+    margin: 0px 0px 50px 0px;
+    /* width: 100%; */
+}
+footer .container{
+    font-size: 15px;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+#privacy{
+    display: flex;
+    gap: 20px;
+}
+footer{
+    padding: 40px 120px;
 }
